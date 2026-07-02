@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: futbolle-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    # The players .sqlite is committed to the repo (data/futbolle.sqlite),
+    # so there's no need to run the seed during deploy.
+    envVars:
+      - key: NODE_VERSION
+        value: "22"

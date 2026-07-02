@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+
+# The players .sqlite IS committed (data/futbolle.sqlite),
+# that's why the data/ folder is NOT ignored.
